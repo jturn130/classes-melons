@@ -8,7 +8,7 @@ class WatermelonOrder(object):
     shape = 'natural'
     seasons = ['Fall', 'Summer']
 
-        def get_price(self, qty):
+    def get_price(self, qty):
     # """Determine price for this quantity of melons of this type.
 
     # Return a float of the total price.
@@ -63,7 +63,8 @@ class CantaloupeOrder(object):
 
         print base_cost
         if self.species == "Casaba" or self.species == "Ogen":
-            base_cost += 1
+            base_cost += 1    species = "Watermelon"
+
 
         if self.imported == True:
             base_cost *= 1.5
